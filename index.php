@@ -21,7 +21,7 @@ if ($conn->connect_error) {
 }
 
 // Query database for all rows in the table
-$sql = "SELECT * FROM employees";
+$sql = "SELECT * FROM employees limit 100";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
